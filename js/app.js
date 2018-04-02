@@ -90,7 +90,7 @@ function getQueryStringValue(field)
 }
 
 (function(sessionInfo){
-    var timeBlock = 5;// getQueryStringValue('sessionBlock');
+    var timeBlock = getQueryStringValue('sessionBlock');
     var timeBlockSessions = sessionInfo.data[timeBlock].sessions;
 
     var timeSlotNode = document.getElementById("timeslot");
